@@ -1,9 +1,9 @@
 import resume from '../assets/pdf/resume.pdf'
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    name: 'Harun AGCA',
+    title: "Software Developer",
+    desciption:'A passionate engineer who loves to build robust systems. He makes an effort to do what he does as well as possible and makes effort to do that.',
+    image: 'https://avatars.githubusercontent.com/u/48195954?v=4',
     resumePdf: resume
 }

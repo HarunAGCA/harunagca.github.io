@@ -14,7 +14,11 @@ import {
     FaGithub,
     FaYoutube,
     FaBlogger,
+    FaMedium,
+    FaAmilia,
+    FaMailchimp,
 } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -101,6 +105,19 @@ function Landing() {
                                 />
                             </a>
                         )}
+                        {socialsData.medium && (
+                            <a
+                                href={socialsData.medium}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaMedium
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='Medium'
+                                />
+                            </a>
+                        )}
                         {socialsData.twitter && (
                             <a
                                 href={socialsData.twitter}
@@ -111,6 +128,19 @@ function Landing() {
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Twitter'
+                                />
+                            </a>
+                        )}
+                        {socialsData.mail && (
+                            <a
+                                href={socialsData.mail}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FiMail
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='Mail'
                                 />
                             </a>
                         )}
@@ -162,12 +192,12 @@ function Landing() {
                         <h6>{headerData.title}</h6>
                         <h1>{headerData.name}</h1>
                         <p>{headerData.desciption}</p>
-
+{/*
                         <div className='lcr-buttonContainer'>
+                          
                             {headerData.resumePdf && (
                                 <a
-                                    href={headerData.resumePdf}
-                                    download='resume'
+                                    href='#'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -182,11 +212,12 @@ function Landing() {
                                 spy='true'
                                 duration={2000}
                             >
-                                <Button className={classes.contactBtn}>
+                            <Button className={classes.contactBtn}>
                                     Contact
                                 </Button>
                             </NavLink>
                         </div>
+                            */}
                     </div>
                 </div>
             </div>
