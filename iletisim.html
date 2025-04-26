@@ -214,6 +214,8 @@
         @media screen and (max-width: 768px) {
             .contact-container {
                 padding: 2rem;
+                width: 80%;
+                max-width: 400px;
             }
 
             h1 {
@@ -235,8 +237,9 @@
 
         @media screen and (max-width: 480px) {
             .contact-container {
-                width: 65%;
+                width: 85%;
                 padding: 1.5rem;
+                margin: 10px;
             }
 
             h1 {
@@ -268,8 +271,9 @@
 
         @media screen and (max-width: 320px) {
             .contact-container {
-                width: 70%;
+                width: 90%;
                 padding: 1rem;
+                margin: 5px;
             }
 
             h1 {
@@ -283,6 +287,10 @@
             .contact-link span {
                 font-size: 0.9rem;
             }
+            
+            .contact-link {
+                padding: 0.7rem 1.2rem;
+            }
         }
 
         /* Yatay mobil cihazlar için */
@@ -290,10 +298,31 @@
             .contact-container {
                 margin: 10px;
                 padding: 1.5rem;
+                max-height: 90vh;
+                overflow-y: auto;
             }
 
             .contact-item {
-                margin: 1rem 0;
+                margin: 0.8rem 0;
+            }
+        }
+        
+        /* For very small screens */
+        @media screen and (max-width: 240px) {
+            .contact-container {
+                width: 95%;
+                padding: 0.8rem;
+                margin: 5px;
+            }
+            
+            .contact-link {
+                padding: 0.6rem 1rem;
+            }
+            
+            .contact-link i {
+                font-size: 1rem;
+                width: 20px;
+                height: 20px;
             }
         }
     </style>
